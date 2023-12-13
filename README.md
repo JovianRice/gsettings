@@ -62,3 +62,17 @@ Disable searching for anything but your installed applications
 Workspaces to apply to all monitors (else if you have an app on your second monitor it will remain when you switch)
 
 ```gsettings set org.gnome.mutter workspaces-only-on-primary false```
+
+To set sleep timeout to 10 minutes / 600 seconds, then require login after 15 minutes / 900 seconds:
+
+```gsettings set org.gnome.settings-daemon.plugins.power sleep-display-ac 600```
+
+```gsettings set org.gnome.settings-daemon.plugins.power sleep-display-battery 600```
+
+```gsettings set org.gnome.desktop.session idle-delay 600```
+
+```gsettings set org.gnome.desktop.screensaver idle-activation-enabled 'true'```
+
+```gsettings set org.gnome.desktop.screensaver lock-enabled 'true'```
+
+```gsettings set org.gnome.desktop.screensaver lock-delay 900```
